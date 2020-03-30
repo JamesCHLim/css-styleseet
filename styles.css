@@ -80,13 +80,19 @@ body .container {
 }
 
 @media only screen and (min-width: 1800px), (orientation: portrait) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-left: 1%;
+    }
     body .container {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        width: 30%;
+        justify-content: center;
         text-align: center;
+        width: 33%;
         margin: 0;
-        margin-left: 3%;
     }
 }
 
