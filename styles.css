@@ -74,10 +74,20 @@ ul {
 }
 
 body .container {
-    display: inline-block;
     width: 80%;
     text-align: center;
     margin: 0 10%;
+}
+
+@media only screen and (min-width: 1800px), (orientation: portrait) {
+    body .container {
+        display: inline-flex;
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+        margin: 0;
+        margin-left: 3%;
+    }
 }
 
 .colorbox {
